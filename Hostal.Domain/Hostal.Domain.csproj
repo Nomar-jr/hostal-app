@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Entities\Enums\" />
+      <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="8.0.0" />
     </ItemGroup>
 
 </Project>

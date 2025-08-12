@@ -1,4 +1,4 @@
-using Hostal.Domain.Entities.Base;
+using Hostal.Domain.Entities.AbstractClass;
 
 namespace Hostal.Domain.Entities;
 

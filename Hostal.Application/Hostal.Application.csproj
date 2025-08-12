@@ -6,4 +6,29 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Specifications\" />
+      <Folder Include="UsesCases\Client\Commands\" />
+      <Folder Include="UsesCases\Client\DTOs\" />
+      <Folder Include="UsesCases\Client\Queries\" />
+      <Folder Include="UsesCases\HeadHousekeeper\Commands\" />
+      <Folder Include="UsesCases\HeadHousekeeper\DTOs\" />
+      <Folder Include="UsesCases\HeadHousekeeper\Queries\" />
+      <Folder Include="UsesCases\Reservation\Commands\" />
+      <Folder Include="UsesCases\Reservation\DTOs\" />
+      <Folder Include="UsesCases\Reservation\Queries\" />
+      <Folder Include="UsesCases\Room\Commands\" />
+      <Folder Include="UsesCases\Room\DTOs\" />
+      <Folder Include="UsesCases\Room\Queries\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="8.0.0" />
+      <PackageReference Include="AutoMapper" Version="15.0.1" />
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+      <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+      <PackageReference Include="MediatR" Version="13.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
+    </ItemGroup>
+
 </Project>

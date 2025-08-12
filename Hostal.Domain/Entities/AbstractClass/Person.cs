@@ -1,12 +1,7 @@
-namespace Hostal.Domain.Entities.Base;
+namespace Hostal.Domain.Entities.AbstractClass;
 
 public abstract class Person
 {
-    /// <summary>
-    /// Gets or sets the unique identifier for the person.
-    /// </summary>
-    public int Id { get; set; }
-    
     /// <summary>
     /// Gets or sets the Carnet de Identidad (CI) of the person.
     /// </summary>
