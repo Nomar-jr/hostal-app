@@ -24,4 +24,9 @@ public class Client: Person
     /// This is used for communication and reservation confirmations.
     /// </summary>
     public string? Email { get; set; }
+    
+    /// <summary>
+    /// Property for SoftDelete
+    /// </summary>
+    public bool IsActive { get; set; }
 }

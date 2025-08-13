@@ -1,5 +1,6 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Hostal.Application.UsesCases.User;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Hostal.Application.ServicesExtensions;
@@ -37,6 +38,7 @@ public static class ServicesCollectionExtensions
         serviceCollection.AddAutoMapper(assembly);
         serviceCollection.AddValidatorsFromAssembly(assembly)
             .AddFluentValidationAutoValidation();
-        serviceCollection.AddHttpContextAccessor();        
+        serviceCollection.AddHttpContextAccessor();
+        serviceCollection.AddScoped<IUserContext, UserContext>();
     }
 }
