@@ -3,6 +3,7 @@ using System;
 using Hostal.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hostal.Infrastructure.Migrations
 {
     [DbContext(typeof(HostalDbContext))]
-    partial class HostalDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250813140436_HeadHouseKeeperEntity")]
+    partial class HeadHouseKeeperEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.19");

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Hostal.Application.Specifications.Client.GetAllClientsActive;
 using Hostal.Application.UsesCases.Client.DTOs.QueriesDto;
 using Hostal.Domain.Interfaces;
 using MediatR;
@@ -16,7 +17,8 @@ public sealed class GetAllClientsQueryHandle(
     public async Task<List<ClientQueryDto>> Handle(GetAllClientsQuery request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Listing all clients");
-        return mapper.Map<List<ClientQueryDto>>(await repository.ListAsync(cancellationToken));
+        return mapper.Map<List<ClientQueryDto>>(
+            await repository.ListAsync(new GetAllClientsActive(), cancellationToken));
     }
         
 }

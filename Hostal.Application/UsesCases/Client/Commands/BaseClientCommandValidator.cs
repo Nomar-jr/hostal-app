@@ -3,9 +3,9 @@ using Hostal.Application.UsesCases.Client.DTOs.CommandsDto;
 
 namespace Hostal.Application.UsesCases.Client.Commands;
 
-public class BaseCommandValidator: AbstractValidator<ClientCommandDto>
+public class BaseClientCommandValidator: AbstractValidator<ClientCommandDto>
 {
-    public BaseCommandValidator()
+    public BaseClientCommandValidator()
     {
         RuleFor(x => x.Name).NotEmpty().WithMessage("Ingrese el nombre del cliente");
         RuleFor(x => x.LastName).NotEmpty().WithMessage("Ingrese los apellidos del cliente");

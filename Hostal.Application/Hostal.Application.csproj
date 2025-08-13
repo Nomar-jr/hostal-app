@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="UsesCases\HeadHousekeeper\Commands\CreateHeadHouseKeeperCommand\" />
       <Folder Include="UsesCases\Reservation\Commands\" />
       <Folder Include="UsesCases\Reservation\DTOs\" />
       <Folder Include="UsesCases\Reservation\Queries\" />

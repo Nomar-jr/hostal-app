@@ -7,6 +7,6 @@ public class UpdateClientCommandValidator: AbstractValidator<UpdateClientCommand
 {
     public UpdateClientCommandValidator()
     {
-        Include(new BaseCommandValidator());
+        Include(new BaseClientCommandValidator());
     }
 }

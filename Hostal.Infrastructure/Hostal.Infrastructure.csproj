@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Authorization\Services\" />
-      <Folder Include="Persistence\Configurations\" />
     </ItemGroup>
 
     <ItemGroup>

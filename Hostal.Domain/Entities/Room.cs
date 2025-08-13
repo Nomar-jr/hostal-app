@@ -21,7 +21,12 @@ public class Room
     /// Gets or sets the maximum number of occupants the room can accommodate.
     /// </summary>
     public int Capacity { get; set; }
-
+    
+    /// <summary>
+    /// Property for SoftDelete
+    /// </summary>
+    public bool IsActive { get; set; }
+    
     /// <summary>
     /// Gets or sets the collection of head housekeepers responsible for this room.
     /// A room may have multiple head housekeepers assigned to it.

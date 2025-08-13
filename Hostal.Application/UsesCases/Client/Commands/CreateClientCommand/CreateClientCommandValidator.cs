@@ -6,6 +6,6 @@ public class CreateClientCommandValidator: AbstractValidator<CreateClientCommand
 {
     public CreateClientCommandValidator()
     {
-        Include(new BaseCommandValidator());
+        Include(new BaseClientCommandValidator());
     }
 }

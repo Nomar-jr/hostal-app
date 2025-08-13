@@ -28,6 +28,11 @@ public class Reservation
     public decimal TotalAmount { get; set; }
 
     /// <summary>
+    /// Gets or sets if the reservation is canceled by client.
+    /// </summary>
+    public bool IsCanceled { get; set; }
+    
+    /// <summary>
     /// Gets or sets the foreign key to the client who made the reservation.
     /// </summary>
     public int ClientId { get; set; }

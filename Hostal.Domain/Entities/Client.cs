@@ -29,4 +29,9 @@ public class Client: Person
     /// Property for SoftDelete
     /// </summary>
     public bool IsActive { get; set; }
+
+    /// <summary>
+    /// Navigation property for Reservation
+    /// </summary>
+    public List<Reservation> Reservations { get; set; } = [];
 }
