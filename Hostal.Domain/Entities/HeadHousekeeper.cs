@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Hostal.Domain.Entities.AbstractClass;
 
 namespace Hostal.Domain.Entities;
@@ -22,5 +23,6 @@ public class HeadHousekeeper: Person
     /// Gets or sets the collection of rooms that this head housekeeper is responsible for.
     /// A head housekeeper may be responsible for multiple rooms.
     /// </summary>
-    public List<Room> Rooms { get; set; } = [];
+    [JsonIgnore]
+    public ICollection<RoomHeadHousekeeper> RoomHeadHousekeepers { get; set; } = [];
 }

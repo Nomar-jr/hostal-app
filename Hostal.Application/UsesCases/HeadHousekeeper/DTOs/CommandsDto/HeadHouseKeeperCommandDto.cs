@@ -33,5 +33,5 @@ public class HeadHouseKeeperCommandDto
     /// Gets or sets the collection of rooms that this head housekeeper is responsible for.
     /// A head housekeeper may be responsible for multiple rooms.
     /// </summary>
-    public List<Room> Rooms { get; set; } = [];
+    public List<int> RoomIds { get; set; } = [];
 }

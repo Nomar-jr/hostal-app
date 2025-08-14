@@ -11,7 +11,12 @@ public class HeadHouseKeeperProfile: Profile
     public HeadHouseKeeperProfile()
     {
         CreateMap<Domain.Entities.HeadHousekeeper, HeadHouseKeeperQueryDto>();
-        CreateMap<CreateHeadHouseKeeperCommand, Domain.Entities.HeadHousekeeper>();
-        CreateMap<UpdateHeadHouseKeeperCommand, Domain.Entities.HeadHousekeeper>();
+        
+        CreateMap<CreateHeadHouseKeeperCommand, Domain.Entities.HeadHousekeeper>()
+            .ForMember(x => x.Id, opt => opt.Ignore())
+            .ForMember(x => x.RoomHeadHousekeepers, opt => opt.Ignore());
+        
+        CreateMap<UpdateHeadHouseKeeperCommand, Domain.Entities.HeadHousekeeper>()
+            .ForMember(x => x.RoomHeadHousekeepers, opt => opt.Ignore());
     }
 }

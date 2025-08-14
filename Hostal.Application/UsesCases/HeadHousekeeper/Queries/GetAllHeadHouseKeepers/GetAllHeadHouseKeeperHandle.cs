@@ -17,6 +17,6 @@ public sealed class GetAllHeadHouseKeeperHandle(
     public async Task<List<HeadHouseKeeperQueryDto>> Handle(GetAllHeadHouseKeeperQuery request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Listing all headhousekeepers");
-        return mapper.Map<List<HeadHouseKeeperQueryDto>>(await repository.ListAsync(new GetAllHeadHouseKeeperRoom() ,cancellationToken));
+        return await repository.ListAsync(new GetAllHeadHouseKeeperRoom() ,cancellationToken);
     }
 }

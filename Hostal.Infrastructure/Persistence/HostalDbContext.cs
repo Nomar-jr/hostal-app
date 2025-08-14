@@ -7,6 +7,8 @@ public class HostalDbContext(DbContextOptions<HostalDbContext> options): DbConte
 {
     public DbSet<Client> Clients { get; set; }
     public DbSet<HeadHousekeeper> HeadHousekeepers { get; set; }
+    public DbSet<Room> Rooms { get; set; }
+    public DbSet<Reservation> Reservations { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

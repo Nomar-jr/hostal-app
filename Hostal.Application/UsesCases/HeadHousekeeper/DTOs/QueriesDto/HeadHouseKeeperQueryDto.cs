@@ -30,8 +30,22 @@ public class HeadHouseKeeperQueryDto
     public string Phone { get; set; } = default!;
     
     /// <summary>
-    /// Gets or sets the collection of rooms that this head housekeeper is responsible for.
-    /// A head housekeeper may be responsible for multiple rooms.
+    /// Property for SoftDelete
     /// </summary>
-    public List<Room> Rooms { get; set; } = [];
+    public bool IsActive { get; set; }
+    
+    /// <summary>
+    /// Fullname for HeadHousekeeper
+    /// </summary>
+    public string FullName => $"{Name} {LastName}";
+    
+    /*/// <summary>
+    /// Count about all rooms assigned to head housekeeper.
+    /// </summary>
+    public int AssignedRoomsCount { get; set; }*/
+    
+    /// <summary>
+    /// Rooms assigned to this head housekeeper
+    /// </summary>
+    public List<RoomAssignmentDto> Rooms { get; set; } = [];
 }

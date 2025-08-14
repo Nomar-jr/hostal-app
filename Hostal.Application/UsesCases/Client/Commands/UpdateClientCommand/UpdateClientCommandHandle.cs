@@ -15,7 +15,7 @@ public class UpdateClientCommandHandle(
     public async Task Handle(UpdateClientCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation($"Updating client with identifier {request.Id}");
-        var client = await repository.FirstOrDefaultAsync(new GetClientById(request.Id), cancellationToken) ??
+        var client = await repository.GetByIdAsync(request.Id, cancellationToken) ??
                      throw new NotFoundException(nameof(Domain.Entities.Client), request.Id.ToString());
         var clientToUpdate = mapper.Map(request, client);
         await repository.UpdateAsync(clientToUpdate, cancellationToken);

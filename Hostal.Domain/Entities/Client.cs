@@ -33,5 +33,5 @@ public class Client: Person
     /// <summary>
     /// Navigation property for Reservation
     /// </summary>
-    public List<Reservation> Reservations { get; set; } = [];
+    public ICollection<Reservation> Reservations { get; set; } = [];
 }

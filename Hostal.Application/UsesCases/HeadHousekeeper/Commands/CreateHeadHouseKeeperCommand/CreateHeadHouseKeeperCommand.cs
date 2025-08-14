@@ -3,4 +3,4 @@ using MediatR;
 
 namespace Hostal.Application.UsesCases.HeadHousekeeper.Commands.CreateHeadHouseKeeperCommand;
 
-public class CreateHeadHouseKeeperCommand: HeadHouseKeeperCommandDto, IRequest;
+public class CreateHeadHouseKeeperCommand: HeadHouseKeeperCommandDto, IRequest<int>;

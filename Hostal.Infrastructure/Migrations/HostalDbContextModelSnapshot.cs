@@ -17,186 +17,331 @@ namespace Hostal.Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.19");
 
-            modelBuilder.Entity("HeadHousekeeperRoom", b =>
-                {
-                    b.Property<int>("HeadHousekeeperId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("RoomsId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("HeadHousekeeperId", "RoomsId");
-
-                    b.HasIndex("RoomsId");
-
-                    b.ToTable("HeadHousekeeperRoom");
-                });
-
             modelBuilder.Entity("Hostal.Domain.Entities.Client", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("Id");
 
                     b.Property<string>("CI")
                         .IsRequired()
                         .HasMaxLength(11)
-                        .HasColumnType("TEXT");
+                        .HasColumnType("varchar(11)")
+                        .HasColumnName("CI")
+                        .HasComment("Carnet de Identidad - 11 digit national identification number");
 
                     b.Property<string>("Email")
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(320)
+                        .HasColumnType("varchar(320)")
+                        .HasColumnName("Email")
+                        .HasComment("Client's email address for communication and reservations");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("INTEGER");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true)
+                        .HasColumnName("IsActive")
+                        .HasComment("Soft delete flag - true means active, false means deleted");
 
                     b.Property<bool>("IsVip")
-                        .HasColumnType("INTEGER");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false)
+                        .HasColumnName("IsVip")
+                        .HasComment("Indicates if the client has VIP status for special benefits");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("LastName")
+                        .HasComment("Last name of the person");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Name")
+                        .HasComment("First name of the person");
 
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("TEXT");
+                        .HasColumnType("varchar(20)")
+                        .HasColumnName("Phone")
+                        .HasComment("Contact phone number");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clients");
+                    b.HasIndex("CI")
+                        .IsUnique()
+                        .HasDatabaseName("IX_Clients_CI")
+                        .HasFilter("[IsActive] = 1");
+
+                    b.HasIndex("Email")
+                        .IsUnique()
+                        .HasDatabaseName("IX_Clients_Email")
+                        .HasFilter("[Email] IS NOT NULL");
+
+                    b.HasIndex("Phone")
+                        .HasDatabaseName("IX_Client_Phone");
+
+                    b.HasIndex("Name", "LastName")
+                        .HasDatabaseName("IX_Client_FullName");
+
+                    b.ToTable("Clients", (string)null);
                 });
 
             modelBuilder.Entity("Hostal.Domain.Entities.HeadHousekeeper", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("Id");
 
                     b.Property<string>("CI")
                         .IsRequired()
                         .HasMaxLength(11)
-                        .HasColumnType("TEXT");
+                        .HasColumnType("varchar(11)")
+                        .HasColumnName("CI")
+                        .HasComment("Carnet de Identidad - 11 digit national identification number");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("INTEGER");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true)
+                        .HasColumnName("IsActive")
+                        .HasComment("Soft delete flag - true means active, false means deleted");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("LastName")
+                        .HasComment("Last name of the person");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Name")
+                        .HasComment("First name of the person");
 
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("TEXT");
+                        .HasColumnType("varchar(20)")
+                        .HasColumnName("Phone")
+                        .HasComment("Contact phone number");
 
                     b.HasKey("Id");
 
-                    b.ToTable("HeadHousekeepers");
+                    b.HasIndex("Phone")
+                        .HasDatabaseName("IX_HeadHousekeeper_Phone");
+
+                    b.HasIndex("Name", "LastName")
+                        .HasDatabaseName("IX_HeadHousekeeper_FullName");
+
+                    b.ToTable("HeadHousekeepers", (string)null);
                 });
 
             modelBuilder.Entity("Hostal.Domain.Entities.Reservation", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("Id");
+
+                    b.Property<DateTime?>("CancellationDate")
+                        .HasColumnType("smalldatetime")
+                        .HasColumnName("FechaCancelacion")
+                        .HasComment("Fecha en que se canceló la reserva. Nulo si no está cancelada.");
+
+                    b.Property<string>("CancellationReason")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)")
+                        .HasColumnName("MotivoCancelacion")
+                        .HasComment("Motivo especificado por el cual se canceló la reserva.");
 
                     b.Property<int>("ClientId")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("EndDateReservation")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("smalldatetime")
+                        .HasColumnName("FechaSalida")
+                        .HasComment("Fecha de fin de la estancia del cliente.");
 
                     b.Property<bool>("IsCanceled")
-                        .HasColumnType("INTEGER");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false)
+                        .HasColumnName("EstaCancelada")
+                        .HasComment("Indica si la reserva fue cancelada (true) o no (false).");
+
+                    b.Property<bool>("IsClientInHostel")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false)
+                        .HasColumnName("EstaElClienteEnHostal")
+                        .HasComment("Indica si el cliente ha realizado el check-in (true) o no (false).");
+
+                    b.Property<DateTime>("ReservationDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("smalldatetime")
+                        .HasColumnName("FechaReservacion")
+                        .HasDefaultValueSql("GETDATE()")
+                        .HasComment("Fecha en que se realizó la reserva.");
 
                     b.Property<int>("RoomId")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("StartDateReservation")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("smalldatetime")
+                        .HasColumnName("FechaEntrada")
+                        .HasComment("Fecha de inicio de la estancia del cliente.");
 
                     b.Property<decimal>("TotalAmount")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("decimal(10, 2)")
+                        .HasColumnName("ImporteRenta")
+                        .HasComment("Costo total de la reserva.");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClientId");
+                    b.HasIndex("ClientId")
+                        .HasDatabaseName("IX_Reservations_ClientId");
 
-                    b.HasIndex("RoomId");
+                    b.HasIndex("RoomId")
+                        .HasDatabaseName("IX_Reservations_RoomId");
 
-                    b.ToTable("Reservation");
+                    b.HasIndex("StartDateReservation", "EndDateReservation")
+                        .HasDatabaseName("IX_Reservations_DateRange");
+
+                    b.ToTable("Reservations", null, t =>
+                        {
+                            t.HasCheckConstraint("CK_Reservation_AmountPositive", "[ImporteRenta] >= 0");
+
+                            t.HasCheckConstraint("CK_Reservation_DateOrder", "[FechaSalida] > [FechaEntrada]");
+                        });
                 });
 
             modelBuilder.Entity("Hostal.Domain.Entities.Room", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("Id");
 
                     b.Property<int>("Capacity")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasColumnName("Capacity")
+                        .HasComment("Maximum number of occupants the room can accommodate");
 
                     b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true)
+                        .HasColumnName("IsActive")
+                        .HasComment("Soft delete flag - true means active, false means deleted");
+
+                    b.Property<bool>("IsOutOfService")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Number")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(3)
+                        .HasColumnType("varchar(3)")
+                        .HasColumnName("Number")
+                        .HasComment("Room number following format 0XY where X is floor (1-3) and Y is room number (1-5)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Room");
+                    b.HasIndex("Number")
+                        .IsUnique()
+                        .HasDatabaseName("IX_Rooms_Number");
+
+                    b.ToTable("Rooms", (string)null);
                 });
 
-            modelBuilder.Entity("HeadHousekeeperRoom", b =>
+            modelBuilder.Entity("Hostal.Domain.Entities.RoomHeadHousekeeper", b =>
                 {
-                    b.HasOne("Hostal.Domain.Entities.HeadHousekeeper", null)
-                        .WithMany()
-                        .HasForeignKey("HeadHousekeeperId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("RoomId")
+                        .HasColumnType("INTEGER");
 
-                    b.HasOne("Hostal.Domain.Entities.Room", null)
-                        .WithMany()
-                        .HasForeignKey("RoomsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("HeadHousekeeperId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("AssignedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.HasKey("RoomId", "HeadHousekeeperId");
+
+                    b.HasIndex("HeadHousekeeperId")
+                        .HasDatabaseName("IX_RoomHeadHousekeepers_HeadHousekeeperId");
+
+                    b.HasIndex("RoomId")
+                        .HasDatabaseName("IX_RoomHeadHousekeepers_RoomId");
+
+                    b.ToTable("RoomHeadHousekeepers", (string)null);
                 });
 
             modelBuilder.Entity("Hostal.Domain.Entities.Reservation", b =>
                 {
                     b.HasOne("Hostal.Domain.Entities.Client", "Client")
-                        .WithMany()
+                        .WithMany("Reservations")
                         .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Reservations_Client");
 
                     b.HasOne("Hostal.Domain.Entities.Room", "Room")
                         .WithMany("Reservations")
                         .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Reservations_Room");
 
                     b.Navigation("Client");
 
                     b.Navigation("Room");
                 });
 
+            modelBuilder.Entity("Hostal.Domain.Entities.RoomHeadHousekeeper", b =>
+                {
+                    b.HasOne("Hostal.Domain.Entities.HeadHousekeeper", "HeadHousekeeper")
+                        .WithMany("RoomHeadHousekeepers")
+                        .HasForeignKey("HeadHousekeeperId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Hostal.Domain.Entities.Room", "Room")
+                        .WithMany("RoomHeadHousekeepers")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("HeadHousekeeper");
+
+                    b.Navigation("Room");
+                });
+
+            modelBuilder.Entity("Hostal.Domain.Entities.Client", b =>
+                {
+                    b.Navigation("Reservations");
+                });
+
+            modelBuilder.Entity("Hostal.Domain.Entities.HeadHousekeeper", b =>
+                {
+                    b.Navigation("RoomHeadHousekeepers");
+                });
+
             modelBuilder.Entity("Hostal.Domain.Entities.Room", b =>
                 {
                     b.Navigation("Reservations");
+
+                    b.Navigation("RoomHeadHousekeepers");
                 });
 #pragma warning restore 612, 618
         }

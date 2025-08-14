@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace Hostal.Domain.Entities;
 
 /// <summary>
@@ -23,6 +25,11 @@ public class Room
     public int Capacity { get; set; }
     
     /// <summary>
+    /// Property for if the room is out of service
+    /// </summary>
+    public bool IsOutOfService { get; set; }
+    
+    /// <summary>
     /// Property for SoftDelete
     /// </summary>
     public bool IsActive { get; set; }
@@ -31,11 +38,13 @@ public class Room
     /// Gets or sets the collection of head housekeepers responsible for this room.
     /// A room may have multiple head housekeepers assigned to it.
     /// </summary>
-    public List<HeadHousekeeper> HeadHousekeeper { get; set; } = [];
+    [JsonIgnore]
+    public virtual ICollection<RoomHeadHousekeeper> RoomHeadHousekeepers { get; set; } = [];
     
     /// <summary>
     /// Gets or sets the collection of reservations made for this room.
     /// Tracks all past and upcoming bookings.
     /// </summary>
-    public List<Reservation> Reservations { get; set; } = [];
+    [JsonIgnore]
+    public virtual ICollection<Reservation> Reservations { get; set; } = [];
 }

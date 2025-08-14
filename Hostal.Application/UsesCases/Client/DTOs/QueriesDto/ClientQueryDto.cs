@@ -1,4 +1,6 @@
-﻿namespace Hostal.Application.UsesCases.Client.DTOs.QueriesDto;
+﻿using Hostal.Domain.Entities;
+
+namespace Hostal.Application.UsesCases.Client.DTOs.QueriesDto;
 
 public class ClientQueryDto
 {
@@ -43,4 +45,9 @@ public class ClientQueryDto
     /// Property for SoftDelete
     /// </summary>
     public bool IsActive { get; set; }
+    
+    /// <summary>
+    /// Navigation property for Reservation
+    /// </summary>
+    public List<Domain.Entities.Reservation> Reservations { get; set; } = [];
 }

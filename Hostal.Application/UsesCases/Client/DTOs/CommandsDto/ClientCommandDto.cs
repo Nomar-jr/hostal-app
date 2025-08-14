@@ -1,4 +1,6 @@
-﻿namespace Hostal.Application.UsesCases.Client.DTOs.CommandsDto;
+﻿using Hostal.Domain.Entities;
+
+namespace Hostal.Application.UsesCases.Client.DTOs.CommandsDto;
 
 public class ClientCommandDto
 {
