@@ -1,6 +1,4 @@
-﻿using Hostal.Domain.Entities;
-
-namespace Hostal.Application.UsesCases.Client.DTOs.QueriesDto;
+﻿namespace Hostal.Application.UsesCases.Client.DTOs.QueriesDto.ClientQueryDto;
 
 public class ClientQueryDto
 {
@@ -31,6 +29,11 @@ public class ClientQueryDto
     public string LastName { get; set; } = default!;
     
     /// <summary>
+    /// Full name concatenation for convenience
+    /// </summary>
+    public string FullName => $"{Name} {LastName}";
+    
+    /// <summary>
     /// Gets or sets the contact phone number of the person.
     /// </summary>
     public string Phone { get; set; } = default!;
@@ -45,9 +48,4 @@ public class ClientQueryDto
     /// Property for SoftDelete
     /// </summary>
     public bool IsActive { get; set; }
-    
-    /// <summary>
-    /// Navigation property for Reservation
-    /// </summary>
-    public List<Domain.Entities.Reservation> Reservations { get; set; } = [];
 }

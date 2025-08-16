@@ -14,10 +14,6 @@ public class BaseReservationCommandValidator : AbstractValidator<ReservationComm
         RuleFor(r => r.EndDateReservation)
             .NotEmpty().WithMessage("La fecha de fin de la reserva es obligatoria.");
 
-        // Regla para TotalAmount: debe ser mayor que 0.
-        RuleFor(r => r.TotalAmount)
-            .GreaterThan(0).WithMessage("El monto total debe ser mayor que cero.");
-
         // Regla para ClientId: debe ser mayor que 0.
         RuleFor(r => r.ClientId)
             .GreaterThan(0).WithMessage("El ID del cliente no es válido.");

@@ -18,11 +18,11 @@ public sealed class GetAllHeadHouseKeeperRoom: Specification<HeadHousekeeper, He
             LastName = x.LastName,
             Phone = x.Phone,
             IsActive = x.IsActive,
-            Rooms = x.RoomHeadHousekeepers.Where(y => y.Room.IsActive).Select(x => new RoomAssignmentDto()
+            /*Rooms = x.RoomHeadHousekeepers.Where(y => y.Room.IsActive).Select(x => new RoomAssignmentDto()
             {
                 Id = x.RoomId,
                 Number = x.Room.Number
-            }).ToList()
+            }).ToList()*/
         });
         Query.OrderBy(x => x.LastName).ThenBy(x => x.Name);
     }

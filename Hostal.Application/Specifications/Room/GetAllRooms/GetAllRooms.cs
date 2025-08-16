@@ -15,13 +15,13 @@ public sealed class GetAllRooms: Specification<Domain.Entities.Room, RoomQueryDt
             Number = x.Number,
             Capacity = x.Capacity,
             IsOutOfService = x.IsOutOfService,
-            IsActive = x.IsActive,
+            IsActive = x.IsActive/*,
             HeadHousekeepers = x.RoomHeadHousekeepers.Where(x => x.Room.IsActive && x.HeadHousekeeper.IsActive)
                 .Select(x => new HeadHousekeeperAssignmentDto()
                 {
                     Id = x.HeadHousekeeperId,
                     NameHeadHousekeeper = x.HeadHousekeeper.Name
-                }).ToList()
+                }).ToList()*/
         });
     }
 }

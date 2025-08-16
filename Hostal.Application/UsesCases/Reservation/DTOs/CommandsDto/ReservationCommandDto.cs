@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Hostal.Domain.Entities;
 
 namespace Hostal.Application.UsesCases.Reservation.DTOs.CommandsDto;
@@ -21,12 +22,13 @@ public class ReservationCommandDto
     /// Gets or sets the end date and time of the reservation.
     /// </summary>
     public DateTime EndDateReservation { get; set; }
-    
+
     /// <summary>
     /// Gets or sets the total cost of the reservation.
     /// This may include room charges and any additional services.
     /// </summary>
-    public decimal TotalAmount { get; set; }
+    [JsonIgnore]
+    public decimal TotalAmount { get; set; } = 1;
     
     /// <summary>
     /// Gets or sets if the client is in hostel.

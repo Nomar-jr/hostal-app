@@ -12,7 +12,6 @@ public record class GetAllRoomsQuery : IRequest<List<RoomQueryDto>>;
 public class GetAllRoomsQueryHandle(IRepository<Domain.Entities.Room> repository, IMapper mapper): IRequestHandler<GetAllRoomsQuery, List<RoomQueryDto>>
 {
     public async Task<List<RoomQueryDto>> Handle(GetAllRoomsQuery request, CancellationToken cancellationToken)
-    {
-        return mapper.Map<List<RoomQueryDto>>(await repository.ListAsync(new GetAllRooms() ,cancellationToken));
-    }
+    => mapper.Map<List<RoomQueryDto>>(await repository.ListAsync(new GetAllRooms() ,cancellationToken));
+    
 }

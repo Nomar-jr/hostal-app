@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Hostal.Application.Specifications.Reservation.GetReservationById;
 using Hostal.Application.UsesCases.Reservation.DTOs.QueriesDto;
+using Hostal.Application.UsesCases.Reservation.DTOs.QueriesDto.ReservationQueryDto;
 using Hostal.Domain.Interfaces;
 using MediatR;
 

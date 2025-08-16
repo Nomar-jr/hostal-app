@@ -6,6 +6,6 @@ public sealed class GetClientById: Specification<Domain.Entities.Client>
 {
     public GetClientById(int id)
     {
-        Query.Where(x => x.Id == id).Include(x => x.Reservations);
+        Query.Where(x => x.Id == id);
     }
 }

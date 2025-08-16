@@ -1,10 +1,13 @@
-﻿using Hostal.Application.UsesCases.Client.Commands.DeleteClientCommand;
+﻿using Hostal.Application.Common;
+using Hostal.Application.UsesCases.Client.Commands.DeleteClientCommand;
+using Hostal.Application.UsesCases.Client.Queries.GetAllClientsQuery;
 using Hostal.Application.UsesCases.HeadHousekeeper.Commands.CreateHeadHouseKeeperCommand;
 using Hostal.Application.UsesCases.HeadHousekeeper.Commands.DeleteHeadHouseKeeperCommand;
 using Hostal.Application.UsesCases.HeadHousekeeper.Commands.UpdateHeadHouseKeeperCommand;
 using Hostal.Application.UsesCases.HeadHousekeeper.DTOs.QueriesDto;
 using Hostal.Application.UsesCases.HeadHousekeeper.Queries.GetAllHeadHouseKeepers;
 using Hostal.Application.UsesCases.HeadHousekeeper.Queries.GetHeadHouseKeeperById;
+using Hostal.Application.UsesCases.HeadHousekeeper.Queries.GetHeadHousekeeperRoom;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,15 +19,37 @@ public class HeadHouseKeeperController(IMediator mediator): ControllerBase
 {
     [HttpGet("GetAllHeadHouseKeepers")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public async Task<ActionResult<List<HeadHouseKeeperQueryDto>>> GetAllHeadHouseKeepers() =>
-        Ok(await  mediator.Send(new GetAllHeadHouseKeeperQuery()));
+    public async Task<ActionResult<PagedResult<HeadHouseKeeperQueryDto>>> GetAllHeadHouseKeepers(
+        [FromQuery] int pageNumber = 1,
+        [FromQuery] int pageSize = 10)
+    {
+        try
+        {
+            var query = new GetAllHeadHouseKeeperQuery()
+            {
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
+
+            var result = await mediator.Send(query);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            // Log the exception
+            return BadRequest($"Error retrieving clients: {ex.Message}");
+        }
+    }
 
     [HttpGet("GetHeadHouseKeeperById/{Id:int}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<HeadHouseKeeperQueryDto>> GetHeadHouseKeeperByIdQuery([FromRoute] GetHeadHouseKeeperQuery query) =>
         Ok(await mediator.Send(query));
     
-    
+    [HttpGet("GetHeadHouseKeeperRoomById/{Id:int}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<ActionResult<HeadHouseKeeperQueryDto>> GetHeadHouseKeeperRoomById([FromRoute] GetHeadHousekeeperRoomQuery query) =>
+        Ok(await mediator.Send(query));
     
     [HttpPost("CreateHeadHouseKeeper")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]

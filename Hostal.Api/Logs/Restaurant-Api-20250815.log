@@ -1,0 +1,265 @@
+2025-08-15 16:55:18.512 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 16:55:19.226 -04:00 [INF] Listing clients - Page: 1, Size: 10
+2025-08-15 16:55:20.119 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 16:55:20.122 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 16:55:20.131 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 16:56:39.807 -04:00 [INF] Listing clients - Page: 1, Size: 4
+2025-08-15 16:56:45.752 -04:00 [INF] Listing clients - Page: 1, Size: 2
+2025-08-15 17:10:41.145 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 17:10:41.564 -04:00 [INF] Listing headhousekeeper - Page: 1, Size: 10
+2025-08-15 17:10:42.253 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:10:42.256 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:10:42.269 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 17:10:52.572 -04:00 [INF] Listing headhousekeeper - Page: 1, Size: 2
+2025-08-15 17:11:10.646 -04:00 [INF] Listing headhousekeeper - Page: 2, Size: 2
+2025-08-15 17:11:17.039 -04:00 [INF] Listing headhousekeeper - Page: 1, Size: 2
+2025-08-15 17:39:25.503 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 17:39:25.994 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 17:39:26.857 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:39:26.859 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:39:26.867 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 17:40:13.430 -04:00 [INF] Listing historial of reservations - Page: 1, Size: 10
+2025-08-15 17:40:18.191 -04:00 [INF] Request [GET] at /api/Reservation/GetAllReservationsPast took 4773 ms
+2025-08-15 17:40:53.828 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 17:41:06.811 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 17:45:48.801 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 17:45:49.383 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 17:45:50.147 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:45:50.149 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:45:50.164 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 17:45:59.463 -04:00 [INF] Listing reservations active - Page: 1, Size: 2
+2025-08-15 17:46:20.504 -04:00 [INF] Listing reservations active - Page: 1, Size: 3
+2025-08-15 17:46:26.125 -04:00 [INF] Listing reservations active - Page: 1, Size: 7
+2025-08-15 17:46:30.242 -04:00 [INF] Listing reservations active - Page: 1, Size: 11
+2025-08-15 17:46:35.601 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 17:46:49.170 -04:00 [INF] Listing historial of reservations - Page: 1, Size: 10
+2025-08-15 17:46:54.896 -04:00 [INF] Listing historial of reservations - Page: 1, Size: 2
+2025-08-15 17:47:38.504 -04:00 [INF] Listing historial of reservations - Page: 2, Size: 2
+2025-08-15 17:47:42.821 -04:00 [INF] Listing historial of reservations - Page: 2, Size: 4
+2025-08-15 17:47:54.569 -04:00 [INF] Listing historial of reservations - Page: 1, Size: 4
+2025-08-15 17:48:48.802 -04:00 [INF] Creating a new reservation
+2025-08-15 17:48:54.591 -04:00 [INF] Listing historial of reservations - Page: 1, Size: 4
+2025-08-15 17:50:25.766 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 17:50:26.419 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 17:50:27.361 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:50:27.369 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:50:27.383 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 17:50:42.952 -04:00 [INF] Listing historial of reservations - Page: 1, Size: 10
+2025-08-15 17:51:28.696 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 17:51:29.064 -04:00 [INF] Listing historial of reservations - Page: 1, Size: 10
+2025-08-15 17:51:29.806 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:51:29.808 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 17:51:29.815 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 17:51:40.122 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 18:06:47.395 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 18:06:47.986 -04:00 [INF] Listing clients - Page: 1, Size: 10
+2025-08-15 18:06:48.720 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:06:48.724 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:06:48.737 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 18:08:29.567 -04:00 [ERR] Validator "CreateReservationCommandValidator" can't be used with ASP.NET automatic validation as it contains asynchronous rules. ASP.NET's validation pipeline is not asynchronous and can't invoke asynchronous rules. Remove the asynchronous rules in order for this validator to run.
+FluentValidation.AsyncValidatorInvokedSynchronouslyException: Validator "CreateReservationCommandValidator" can't be used with ASP.NET automatic validation as it contains asynchronous rules. ASP.NET's validation pipeline is not asynchronous and can't invoke asynchronous rules. Remove the asynchronous rules in order for this validator to run.
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 207
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.AspNetCore.FluentValidationModelValidator.Validate(ModelValidationContext mvContext) in /_/src/FluentValidation.AspNetCore/FluentValidationModelValidatorProvider.cs:line 150
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 45
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 63
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 47
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hostal.Api.Middlewares.RequestLoggingMiddleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\RequestLoggingMiddleware\RequestLoggingMiddleware.cs:line 11
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Middlewares.ErrorHandlingMiddleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\ErrorHandlingMiddleware\ErrorHandlingMiddleware.cs:line 11
+2025-08-15 18:08:36.954 -04:00 [ERR] Validator "CreateReservationCommandValidator" can't be used with ASP.NET automatic validation as it contains asynchronous rules. ASP.NET's validation pipeline is not asynchronous and can't invoke asynchronous rules. Remove the asynchronous rules in order for this validator to run.
+FluentValidation.AsyncValidatorInvokedSynchronouslyException: Validator "CreateReservationCommandValidator" can't be used with ASP.NET automatic validation as it contains asynchronous rules. ASP.NET's validation pipeline is not asynchronous and can't invoke asynchronous rules. Remove the asynchronous rules in order for this validator to run.
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 207
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /_/src/FluentValidation/AbstractValidator.cs:line 153
+   at FluentValidation.AspNetCore.FluentValidationModelValidator.Validate(ModelValidationContext mvContext) in /_/src/FluentValidation.AspNetCore/FluentValidationModelValidatorProvider.cs:line 150
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 45
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 63
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 47
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hostal.Api.Middlewares.RequestLoggingMiddleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\RequestLoggingMiddleware\RequestLoggingMiddleware.cs:line 11
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Middlewares.ErrorHandlingMiddleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\ErrorHandlingMiddleware\ErrorHandlingMiddleware.cs:line 11
+2025-08-15 18:14:30.569 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 18:14:31.083 -04:00 [INF] Creating a new reservation
+2025-08-15 18:14:31.983 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:14:31.989 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:14:32.003 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 18:14:32.882 -04:00 [ERR] El cliente ya tiene una reserva activa en el período seleccionado. No se pueden tener reservas superpuestas.
+FluentValidation.ValidationException: El cliente ya tiene una reserva activa en el período seleccionado. No se pueden tener reservas superpuestas.
+   at Hostal.Application.UsesCases.Reservation.Commands.CreateReservationCommand.CreateReservationCommandHandle.Handle(CreateReservationCommand request, CancellationToken cancellationToken) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Application\UsesCases\Reservation\Commands\CreateReservationCommand\CreateReservationCommandHandle.cs:line 35
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`1.<>c__DisplayClass1_0.<<Handle>g__Handler|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Controllers.ReservationController.CreateReservation(CreateReservationCommand command) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Controllers\ReservationController.cs:line 102
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hostal.Api.Middlewares.RequestLoggingMiddleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\RequestLoggingMiddleware\RequestLoggingMiddleware.cs:line 11
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Middlewares.ErrorHandlingMiddleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\ErrorHandlingMiddleware\ErrorHandlingMiddleware.cs:line 11
+2025-08-15 18:16:14.291 -04:00 [INF] Creating a new reservation
+2025-08-15 18:16:19.451 -04:00 [INF] Creating a new reservation
+2025-08-15 18:16:19.491 -04:00 [ERR] El cliente ya tiene una reserva activa en el período seleccionado. No se pueden tener reservas superpuestas.
+FluentValidation.ValidationException: El cliente ya tiene una reserva activa en el período seleccionado. No se pueden tener reservas superpuestas.
+   at Hostal.Application.UsesCases.Reservation.Commands.CreateReservationCommand.CreateReservationCommandHandle.Handle(CreateReservationCommand request, CancellationToken cancellationToken) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Application\UsesCases\Reservation\Commands\CreateReservationCommand\CreateReservationCommandHandle.cs:line 35
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`1.<>c__DisplayClass1_0.<<Handle>g__Handler|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Controllers.ReservationController.CreateReservation(CreateReservationCommand command) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Controllers\ReservationController.cs:line 102
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hostal.Api.Middlewares.RequestLoggingMiddleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\RequestLoggingMiddleware\RequestLoggingMiddleware.cs:line 11
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Middlewares.ErrorHandlingMiddleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\ErrorHandlingMiddleware\ErrorHandlingMiddleware.cs:line 11
+2025-08-15 18:28:15.462 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 18:28:16.299 -04:00 [INF] Creating a new reservation
+2025-08-15 18:28:17.081 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:28:17.086 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:28:17.096 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 18:28:18.016 -04:00 [ERR] El cliente ya tiene una reserva activa en el período seleccionado. No se pueden tener reservas superpuestas.
+Hostal.Domain.Exceptions.OverlappingReservationsException: El cliente ya tiene una reserva activa en el período seleccionado. No se pueden tener reservas superpuestas.
+   at Hostal.Application.UsesCases.Reservation.Commands.CreateReservationCommand.CreateReservationCommandHandle.Handle(CreateReservationCommand request, CancellationToken cancellationToken) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Application\UsesCases\Reservation\Commands\CreateReservationCommand\CreateReservationCommandHandle.cs:line 35
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`1.<>c__DisplayClass1_0.<<Handle>g__Handler|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Controllers.ReservationController.CreateReservation(CreateReservationCommand command) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Controllers\ReservationController.cs:line 102
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hostal.Api.Middlewares.RequestLoggingMiddleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\RequestLoggingMiddleware\RequestLoggingMiddleware.cs:line 11
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Middlewares.ErrorHandlingMiddleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\ErrorHandlingMiddleware\ErrorHandlingMiddleware.cs:line 12
+2025-08-15 18:35:42.720 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 18:35:43.223 -04:00 [INF] Creating a new reservation
+2025-08-15 18:35:43.956 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:35:43.961 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:35:43.970 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 18:37:31.838 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 18:37:32.514 -04:00 [INF] Creating a new reservation
+2025-08-15 18:37:33.288 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:37:33.295 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 18:37:33.308 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 18:37:34.244 -04:00 [ERR] El cliente ya tiene una reserva activa en el período seleccionado. No se pueden tener reservas superpuestas.
+Hostal.Domain.Exceptions.OverlappingReservationsException: El cliente ya tiene una reserva activa en el período seleccionado. No se pueden tener reservas superpuestas.
+   at Hostal.Application.UsesCases.Reservation.Commands.CreateReservationCommand.CreateReservationCommandHandle.Handle(CreateReservationCommand request, CancellationToken cancellationToken) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Application\UsesCases\Reservation\Commands\CreateReservationCommand\CreateReservationCommandHandle.cs:line 35
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`1.<>c__DisplayClass1_0.<<Handle>g__Handler|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Controllers.ReservationController.CreateReservation(CreateReservationCommand command) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Controllers\ReservationController.cs:line 102
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hostal.Api.Middlewares.RequestLoggingMiddleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\RequestLoggingMiddleware\RequestLoggingMiddleware.cs:line 11
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Hostal.Api.Middlewares.ErrorHandlingMiddleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Nomar\Proyectos\Proyecto GET\HostalProject\HostalProject\Hostal.Api\Middlewares\ErrorHandlingMiddleware\ErrorHandlingMiddleware.cs:line 12
+2025-08-15 19:20:11.837 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 19:20:13.276 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 19:20:13.284 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 19:20:13.297 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 19:20:31.028 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 19:22:22.427 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 19:22:22.928 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 19:22:23.672 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 19:22:23.675 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 19:22:23.684 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 19:23:44.574 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 19:23:45.789 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 19:23:45.795 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 19:23:45.804 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 19:23:46.636 -04:00 [INF] Change the room client with identifier 3 to the room with identifier 1
+2025-08-15 19:23:59.012 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 19:29:17.610 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 19:29:20.138 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 19:29:20.144 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 19:29:20.159 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 19:29:21.757 -04:00 [INF] Request [GET] at /api/Client/GetClientReservationsActiveById/1 took 4246 ms
+2025-08-15 20:21:09.882 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 20:21:12.240 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 20:21:12.245 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 20:21:12.262 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-15 20:21:14.141 -04:00 [INF] Request [GET] at /api/Room/GetAvailableRooms took 4363 ms
+2025-08-15 22:19:49.049 -04:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-15 22:19:49.677 -04:00 [INF] Listing reservations active - Page: 1, Size: 10
+2025-08-15 22:19:50.448 -04:00 [WRN] Entity 'Client' has a global query filter defined and is the required end of a relationship with the entity 'Reservation'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 22:19:50.451 -04:00 [WRN] Entity 'HeadHousekeeper' has a global query filter defined and is the required end of a relationship with the entity 'RoomHeadHousekeeper'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2025-08-15 22:19:50.459 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.

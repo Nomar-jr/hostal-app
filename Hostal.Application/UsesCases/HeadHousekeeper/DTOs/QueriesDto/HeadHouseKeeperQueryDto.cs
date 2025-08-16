@@ -44,8 +44,8 @@ public class HeadHouseKeeperQueryDto
     /// </summary>
     public int AssignedRoomsCount { get; set; }*/
     
-    /// <summary>
+    /*/// <summary>
     /// Rooms assigned to this head housekeeper
     /// </summary>
-    public List<RoomAssignmentDto> Rooms { get; set; } = [];
+    public List<RoomAssignmentDto> Rooms { get; set; } = [];*/
 }

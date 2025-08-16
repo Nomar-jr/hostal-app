@@ -17,13 +17,13 @@ public sealed class GetHeadHouseKeeperRoom: Specification<HeadHousekeeper, HeadH
             Name = x.Name,
             LastName = x.LastName,
             IsActive = x.IsActive,
-            Phone = x.Phone,
+            Phone = x.Phone/*,
             Rooms = x.RoomHeadHousekeepers.Where(z => z.HeadHousekeeper.IsActive)
                 .Select(z => new RoomAssignmentDto()
                 {
                     Id = z.RoomId,
                     Number = z.Room.Number
-                }).ToList()
+                }).ToList()*/
         });
     }
 }

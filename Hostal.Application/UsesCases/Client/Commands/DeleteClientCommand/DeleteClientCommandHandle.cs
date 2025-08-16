@@ -14,7 +14,15 @@ public class DeleteClientCommandHandle(
         logger.LogInformation($"Deleting client with identifier {request.Id}");
         var client = await repository.GetByIdAsync(request.Id, cancellationToken) ??
                      throw new NotFoundException(nameof(Domain.Entities.Client), request.Id.ToString());
-        client.IsActive = false;
-        await repository.SaveChangesAsync(cancellationToken);
+        if (client.Reservations.Count == 0)
+        {
+            client.IsActive = false;
+            await repository.SaveChangesAsync(cancellationToken);
+        }
+        else
+        {
+            throw new DeleteClientWithReservationException();
+        }
+         
     }
 }

@@ -17,13 +17,13 @@ public sealed class GetRoomById: Specification<Domain.Entities.Room, RoomQueryDt
             Number = x.Number,
             Capacity = x.Capacity,
             IsOutOfService = x.IsOutOfService,
-            IsActive = x.IsActive,
+            IsActive = x.IsActive/*,
             HeadHousekeepers = x.RoomHeadHousekeepers.Where(z => z.HeadHousekeeper.IsActive)
                 .Select(c => new HeadHousekeeperAssignmentDto()
             {
                 Id = c.HeadHousekeeperId,
                 NameHeadHousekeeper = c.HeadHousekeeper.Name
-            }).ToList()
+            }).ToList()*/
         });
     }
 }

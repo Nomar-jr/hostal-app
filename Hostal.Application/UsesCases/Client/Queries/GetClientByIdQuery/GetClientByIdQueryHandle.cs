@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Hostal.Application.UsesCases.Client.DTOs.QueriesDto;
+using Hostal.Application.UsesCases.Client.DTOs.QueriesDto.ClientQueryDto;
 using Hostal.Domain.Exceptions;
 using Hostal.Domain.Interfaces;
 using MediatR;

@@ -1,4 +1,6 @@
 ﻿using System.Text.Json.Serialization;
+using Hostal.Api.Middlewares.ErrorHandlingMiddleware;
+using Hostal.Api.Middlewares.RequestLoggingMiddleware;
 using Hostal.Application.ServicesExtensions;
 using Hostal.Infrastructure.ServicesExtensions;
 
@@ -16,5 +18,7 @@ public static class ServicesCollectionExtensions
         services.AddSwaggerGen();
         services.AddInfrastructureServices(configuration);
         services.AddApplicationServices();
+        services.AddScoped<ErrorHandlingMiddleware>();
+        services.AddScoped<RequestLoggingMiddleware>();
     }
 }

@@ -30,7 +30,7 @@ public class RoomQueryDto
     /// </summary>
     public bool IsActive { get; set; }
 
-    /// <summary>
+    /*/// <summary>
     /// Properties for HeadHousekeeper
     /// </summary>
     public List<HeadHousekeeperAssignmentDto> HeadHousekeepers { get; set; } = [];
@@ -39,5 +39,5 @@ public class RoomQueryDto
     /// Gets or sets the collection of reservations made for this room.
     /// Tracks all past and upcoming bookings.
     /// </summary>
-    public List<Domain.Entities.Reservation> Reservations { get; set; } = [];
+    public List<Domain.Entities.Reservation> Reservations { get; set; } = [];*/
 }
